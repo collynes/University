@@ -1,0 +1,19 @@
+body {
+    padding-left: 300px;
+  }
+
+  @media only screen and (max-width : 992px) {
+    header, main, footer {
+      padding-left: 0;
+    }
+  }
+
+  .logo{
+    width: 65%;
+    height: auto;
+    margin-top: 0%;
+    margin-left: 5%;
+  }
+
+  .card-panel.scroll{overflow-x:scroll;}
+.collapsible .fa-sort-down{margin-left:10px}
