@@ -25,6 +25,7 @@
       @show
       @yield('content')
       <!--JavaScript at end of body for optimized loading-->
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
       <script type="text/javascript" src="{{asset('js/jquery-3.3.1.js')}}"></script>
       <script type="text/javascript" src="{{asset('materialize/js/materialize.min.js')}}"></script>
       <script type="text/javascript" src="{{asset('js/custom.js')}}"></script>

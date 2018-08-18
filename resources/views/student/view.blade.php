@@ -2,8 +2,9 @@
 @section('title', 'Card stmt')
 @section('content')
 <div class="row">
-      
-        <div class="card-panel scroll">
+<div class="card-panel white lighten-4 green-text text-darken-4"> <B>REGISTERD STUDENTS</B></div>
+@include('sweet::alert');
+        <!-- <div class="card-panel scroll"> -->
         <table class="striped">
         <thead>
           <tr>

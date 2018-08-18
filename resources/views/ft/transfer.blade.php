@@ -6,7 +6,7 @@
         <div class="card-panel">
         <h3 class="card-title"></h3>
         <div class="user-view">
-            <a href="#user"><img class="logo" src="{{url('storage/main.png')}}"></a>
+            <a href="#user"><img class="logo" src="{{url('storage/logo.jpg')}}"></a>
         </div>
         </div>
         </div>

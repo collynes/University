@@ -13,8 +13,9 @@ class StudentCourseTable extends Migration
      */
     public function up()
     {
-        Schema::create('course_student', function (Blueprint $table) {
+        Schema::create('course_students', function (Blueprint $table) {
                         $table->increments('id');
+                        $table->string('period');
                         $table->integer('student_id')->unsigned()->nullable();
                         $table->foreign('student_id')->references('id')->on('students')->onDelete('cascade');
                         $table->integer('course_id')->unsigned()->nullable();            

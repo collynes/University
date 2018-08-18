@@ -4,7 +4,7 @@
 <div class="row">
    <div class="col s12 m8 offset-m2">
       <div class="card-panel">
-         <h3 class="card-title">-----</h3>
+         <h3 class="card-title">Enroll Students</h3>
          @if (session('status'))
          <div class="card-panel green lighten-4 green-text text-darken-4">{{session('status')}}
          </div>
@@ -26,6 +26,12 @@
                {!! Form::label('Period', 'Semester Dates') !!}
                <span class="helper-text red-text" data-error="wrong" data-success="right"> {{ $errors->first('account_number') }}</span>
             </div>
+            <div class="input-field col s12">
+               {!! Form::select('campus',['0'=>'Main Campus','1'=>'Town Campus','2'=>'Weslands Campus','3'=>'Karen Campus']) !!}
+               {!! Form::label('Camous', 'Campus') !!}
+               <span class="helper-text red-text" data-error="wrong" data-success="right"> {{ $errors->first('account_number') }}</span>
+            </div>
+            
             <div class="input-field col s12">
                {!! Form::select('student_id', $students, null, ['class' => 'form-control']) !!}
                {!! Form::label('Student', 'Student') !!}

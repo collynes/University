@@ -36,7 +36,7 @@
 
                 
                 <div class="input-field col s12">
-                    {!! Form::submit('Submit',['class'=>'btn black  white-text']) !!}
+                {!! Form::submit('Submit',['class'=>'btn black  white-text']) !!}
                 </div>
 
             {!! Form::close() !!}

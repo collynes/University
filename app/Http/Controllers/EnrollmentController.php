@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Course;
 use App\Student;
-use App\Enroll;
+use App\CourseStudent;
 
 class EnrollmentController extends Controller
 {
@@ -28,6 +28,6 @@ class EnrollmentController extends Controller
     public function new(Request $request)
     {                      
      //   dd($request);
-        $create = Enroll::create($request->except('_token'));  
+        $create = CourseStudent::create($request->except('_token'));  
     }
 }

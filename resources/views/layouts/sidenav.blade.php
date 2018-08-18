@@ -1,7 +1,7 @@
 <ul id="slide-out" class="sidenav sidenav-fixed">
     <li>
         <div class="user-view">
-            <a href="#user"><img class="logo" src="{{url('storage/logo2.png')}}"></a>
+            <a href="#user"><img class="logo" src="{{url('storage/logo.jpg')}}"></a>
         </div>
     </li>
 

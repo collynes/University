@@ -18,7 +18,7 @@ class CoursesController extends Controller
     public function index()
     {
         
-        return 'Under Development';
+        return view('course.new');
 
     }
     public function new(Request $request)
@@ -29,5 +29,12 @@ class CoursesController extends Controller
         
     }
    
+    function courseStudents(){
+
+        $courseCount=Course::with('students')->get();
+        return view('enroll.checkquorum',['enrolls'=>$courseCount]);
+
+        //dd($courseCount);
+    }
    
 }

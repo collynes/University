@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
 use App\Student;
-
+use Alert;
 class StudentsController extends Controller
 {
     /**
@@ -20,8 +20,9 @@ class StudentsController extends Controller
     public function index()
     {
         $students = Student::all();
-      
+        Alert::message('Student has been created succesfully');
         return view('student.view',['students'=>$students]);
+        
 
     }
     public function add(Request $request)
